@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*
+LOADING
+Archivo estilo panel de carga.
+
+Autor: Pablo Pizarro R. @ppizarror.com
+Licencia MIT
+*/
+
+/**
+-------------------------------------------------------------------------------
+Capa de carga, usa toda la ventana, contiene un spinner
+-------------------------------------------------------------------------------
+ */
+#LoadingDivLayer {
+	width: 100%;
+}
+
+#LoadingDivLayer.LoadingDivLayerClass {
+	border: none;
+	display: none;
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	z-index: 99999;
+}
+
+#LoadingDivLayer.LoadingDivLayerClass .LoadingForeground {
+	position: fixed;
+	width: 100%;
+	z-index: 101;
+}
+
+#LoadingDivLayer.LoadingDivLayerClass .LoadingForeground .LoadingBox {
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background: rgba(0, 0, 0, 0.85);
+	border-radius: 8px;
+	height: 75px !important;
+	line-height: 69px;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	text-align: center;
+	width: 75px !important;
+}
+
+#LoadingDivLayer.LoadingDivLayerClass .LoadingForeground .LoadingBox img {
+	border: none;
+	height: 29px;
+	margin: 18px auto;
+	outline: none;
+	padding: 0;
+	position: relative;
+	width: 29px;
+}
+
+#LoadingDivLayer.LoadingDivLayerClass .LoadingBackground {
+	background-color: #000000;
+	border: none;
+	filter: alpha(opacity=30);
+	left: 0;
+	margin: 0;
+	opacity: 0.3;
+	overflow: hidden;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	zoom: 1;
+}

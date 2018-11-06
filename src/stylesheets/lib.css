@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/*
+LIB
+Corrige y modifica entradas de CSS de librerías.
+
+Autor: Pablo Pizarro R. @ppizarror.com
+Licencia MIT
+*/
+
+/**
+-------------------------------------------------------------------------------
+jquery.contextMenu
+-------------------------------------------------------------------------------
+ */
+
+/**
+Listas de context-menu
+ */
+.context-menu-list {
+	font-size: 0.95rem !important;
+}
+
+@media screen and (max-width: 576px) {
+	.context-menu-list {
+		font-size: 0.85rem !important;
+	}
+}
+
+/**
+Modifica estilo de ítems
+ */
+.context-menu-list .context-menu-item {
+	padding: 3px 5px 3px 10px !important; /* top right bottom left */
+}
+
+/**
+Título del menú contextual, no tiene padre
+ */
+.contextmenu-menu-title:before {
+	background: #dddddd;
+	content: attr(data-menutitle);
+	display: block;
+	font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	left: 0;
+	padding-top: 1px;
+	padding-left: 5px;
+	padding-bottom: 4px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/**
+Ícono de cada entrada en el menú contextual
+ */
+.context-menu-item .contextmenu-item-icon {
+	display: inline-block;
+	filter: alpha(opacity=75);
+	margin-right: 10px;
+	opacity: 0.75;
+	text-align: center;
+	width: 20px;
+	zoom: 1;
+}
+
+/**
+Separador del menú
+ */
+.context-menu-item.context-menu-separator {
+	margin: 2px 0;
+	padding: 0 !important;
+}
+
+/**
+-------------------------------------------------------------------------------
+twbs bootstrap
+-------------------------------------------------------------------------------
+ */
+
+/**
+Desactiva el outline de formularios
+ */
+.form-control:focus {
+	box-shadow: inherit !important;
+}
+
+@media screen and (max-width: 576px) {
+	.form-control {
+		font-size: 0.8rem !important;
+	}
+}
+
+/**
+Botones
+ */
+.btn.focus,
+.btn:focus {
+	box-shadow: inherit !important;
+}
+
+@media screen and (max-width: 576px) {
+	.btn {
+		font-size: 0.80rem !important;
+		padding: 0.2rem 0.4rem !important;
+	}
+}
+
+/**
+Tooltips
+ */
+.tooltip {
+	font-size: 10px;
+	zoom: 1;
+}
+
+/**
+-------------------------------------------------------------------------------
+dataTables
+-------------------------------------------------------------------------------
+ */
+
+/**
+Aplica margen superior al paginado de las tablas
+ */
+div.dataTables_wrapper div.dataTables_paginate {
+	margin-top: 8px !important;
+}
+
+@media screen and (max-width: 576px) {
+	div.dataTables_wrapper div.dataTables_paginate {
+		justify-content: center !important;
+	}
+}
+
+/**
+Modifica margen de selector para que no quede tan pegado con el texto
+ */
+div.dataTables_wrapper div.dataTables_length select {
+	margin: auto 3px;
+}
+
+@media screen and (max-width: 576px) {
+	div.dataTables_wrapper div.dataTables_length select {
+		margin: auto 1px;
+	}
+}
+
+/**
+-------------------------------------------------------------------------------
+Configura el estilo de los distintos motores de notificaciones
+-------------------------------------------------------------------------------
+ */
+.jq-has-icon {
+	padding: 15px 15px 15px 50px;
+}
+
+.jq-toast-single h2 {
+	padding-right: 7px;
+}
+
+@media screen and (max-width: 576px) {
+	.jq-has-icon {
+		background-position: 5px !important;
+		padding: 10px 0 10px 35px !important;
+	}
+
+	#toast-container > div {
+		font-size: 0.85rem;
+		width: 200px !important;
+	}
+
+	.toast-bottom-right {
+		right: 2.5% !important;
+	}
+
+	.amaran.colorful .colorful-inner {
+		font-size: 0.8rem !important;
+		padding: 5px !important;
+		word-wrap: break-word !important;
+	}
+
+	.amaran.colorful {
+		margin: 0 !important;
+		width: 150px !important;
+	}
+
+	.jq-toast-single {
+		font-size: 0.8rem !important;
+		margin-top: 4px !important;
+		width: 150px !important;
+	}
+
+	.jq-toast-wrap.bottom-left {
+		bottom: 5px !important;
+		left: 5px !important;
+	}
+}
+
+/**
+-------------------------------------------------------------------------------
+jquery-confirm
+-------------------------------------------------------------------------------
+ */
+
+/**
+Parcha el título de jquery-confirm para que funcione con los íconos
+ */
+.jconfirm .jconfirm-box div.jconfirm-title-c .jconfirm-title {
+	display: inline-block !important;
+}
+
+/**
+Parcha el contenedor del ícono y el título
+ */
+.jconfirm .jconfirm-box div.jconfirm-title-c {
+	display: flex !important;
+}
+
+/**
+Aplica cursor default
+ */
+.jconfirm-default-cursor {
+	cursor: default !important;
+}
+
+/**
+Cambia el margen de los hr dentro del contenido
+ */
+.jconfirm-content hr {
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+}
+
+/**
+-------------------------------------------------------------------------------
+Parcha ion.rangeSlider
+-------------------------------------------------------------------------------
+ */
+.irs-grid-pol {
+	background: #505050 !important;
+}
+
+.irs-grid-text {
+	color: #1a1a1a !important;
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+	zoom: 1;
+}

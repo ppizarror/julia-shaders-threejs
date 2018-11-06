@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Julia-Shaders</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="src/res/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/res/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/res/favicon-16x16.png">
+    <link rel="manifest" href="src/res/site.webmanifest">
+    <link rel="mask-icon" href="src/res/safari-pinned-tab.svg" color="#d0642f">
+    <link rel="shortcut icon" href="src/res/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Julia-Shaders">
+    <meta name="application-name" content="Julia-Shaders">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="src/res/mstile-144x144.png">
+    <meta name="msapplication-config" content="src/res/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Define los meta-tags -->
+    <meta name="description" content="Tarea 2 GPU, Visualizador shaders conjunto de Julia"/>
+    <meta name="googlebot" content="noindex, noarchive"/>
+    <meta name="robots" content="noindex, noarchive"/>
+    <meta name="twitter:description" content="Tarea 2 GPU, Visualizador shaders conjunto de Julia"/>
+    <meta name="twitter:title" content="Julia-Shaders"/>
+    <meta property="og:description" content="Tarea 2 GPU, Visualizador shaders conjunto de Julia"/>
+    <meta property="og:title" content="Julia-Shaders"/>
+
+    <!-- Carga librerías -->
+    <link rel="stylesheet" type="text/css" href="lib/animate/animate.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/all.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="lib/hover/hover.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="lib/jquery-confirm/jquery-confirm.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="lib/normalize/normalize.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="lib/spin/spin.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="lib/dat.gui/dat.gui.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap-slider/bootstrap-slider.min.css" media="screen">
+
+    <script src="lib/jquery/jquery-3.3.1.js"></script>
+    <script src="lib/jquery-confirm/jquery-confirm.min.js"></script>
+    <script src="lib/jquery-dateFormat/jquery-dateFormat.min.js"></script>
+    <script src="lib/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+    <script src="lib/jscookie/js.cookie-2.2.0.js"></script>
+    <script src="lib/md5/md5.min.js"></script>
+    <script src="lib/three.js/three.min.js"></script>
+    <script src="lib/three.js/OrbitControls.min.js"></script>
+    <script src="lib/stats.js/stats.min.js"></script>
+    <script src="lib/spin/spin.js"></script>
+    <script src="lib/dat.gui/dat.gui.min.js"></script>
+    <script src="lib/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+    <!-- Carga estilos -->
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/root.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/lib.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/loading.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/viewer.css" media="screen">
+
+    <!-- Carga la aplicación -->
+    <script src="src/about/about.js"></script>
+    <script src="src/about/author.js"></script>
+    <script src="src/about/dependencies.js"></script>
+    <script src="src/about/version.js"></script>
+
+    <script src="src/i18n/lang.js"></script>
+    <script src="src/i18n/es.js"></script>
+
+    <script src="src/core/globals.js"></script>
+    <script src="src/core/config.js"></script>
+    <script src="src/core/polyfills.js"></script>
+    <script src="src/core/date.js"></script>
+    <script src="src/core/logic.js"></script>
+    <script src="src/core/session.js"></script>
+    <script src="src/core/console.js"></script>
+    <script src="src/core/dom.js"></script>
+    <script src="src/core/color.js"></script>
+    <script src="src/core/math.js"></script>
+    <script src="src/core/hash.js"></script>
+
+    <script src="src/shaderviewer/loader.js"></script>
+    <script src="src/shaderviewer/viewer.js"></script>
+
+    <script src="src/ui/loading.js"></script>
+    <script src="src/ui/dialogs.js"></script>
+    <script src="src/ui/ui.js"></script>
+
+    <script src="src/app.js"></script>
+</head>
+
+<body>
+<div id="viewer-left-panel" class="animated slideInLeft fast"></div>
+<div id="viewer-right-panel"></div>
+<div id="viewer-gui"></div>
+</body>
+</html>
