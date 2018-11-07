@@ -8,7 +8,7 @@ Visualizador shaders de conjunto fractal de Julia con Three.js, tarea N°2 curso
 
 ## Ejecutar
 
-El proyecto se puede ejecutar de manera online: [ppizarror.com/julia-shaders-threejs/](https://ppizarror.com/julia-shaders-threejs/).
+El proyecto se puede ejecutar de manera online: [ppizarror.com/julia-shaders-threejs/](https://ppizarror.com/julia-shaders-threejs/)
 
 ## Dependencias
 
