@@ -1,6 +1,6 @@
 # Julia Shaders-Threejs
 
-Visualizador shaders de conjunto fractal de Julia con Three.js, tarea N°2 curso Computación en GPU CC7515, uchile.
+Visualizador shaders de conjunto fractal de Julia con Three.js, tarea N°2 curso computación en GPU CC7515, uchile.
 
 <div align="center">
     <img src="https://github.com/ppizarror/ppizarror.github.io/blob/ac5566b1bd7e83bb2e8f9990fdab8fa2a142d96d/resources/images/julia-shaders/main.PNG?raw=true" alt="" width="60%">
