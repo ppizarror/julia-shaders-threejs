@@ -10,6 +10,6 @@
  * Versión de la aplicación
  */
 aboutinfo.v = {
-    "date": "06/11/2018",
-    "version": "0.4.2",
+    "date": "13/06/2019",
+    "version": "0.5.0",
 };

@@ -61,7 +61,7 @@ const cfg_cookie_local = true;
  * @global
  * @ignore
  */
-const cfg_cookie_session_id = 'Rx3RTyAZyk';
+const cfg_cookie_session_id = 'Rx5RTyA6yk';
 
 /**
  * Activa el log en consola

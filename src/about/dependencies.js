@@ -25,5 +25,5 @@ aboutinfo.dependencies = {
     "normalize": "8.0.0",                   // https://github.com/necolas/normalize.css
     "spin.js": "4.0.0",                     // https://github.com/fgnass/spin.js
     "stats.js": "r17",                      // https://github.com/mrdoob/stats.js
-    "three.js": "r98",                      // https://github.com/mrdoob/three.js
+    "three.js": "r105",                     // https://github.com/mrdoob/three.js
 };

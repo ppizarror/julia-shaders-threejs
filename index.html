@@ -64,6 +64,7 @@
     <script src="src/about/version.js"></script>
 
     <script src="src/i18n/lang.js"></script>
+    <script src="src/i18n/en.js"></script>
     <script src="src/i18n/es.js"></script>
 
     <script src="src/core/globals.js"></script>
@@ -91,7 +92,9 @@
     <script>
         window.dataLayer = window.dataLayer || [];
 
-        function gtag() {dataLayer.push(arguments);}
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
         gtag('js', new Date());
         gtag('config', 'UA-118050511-8');
