@@ -1,6 +1,6 @@
 # Julia Shaders-Threejs
 
-Visualizador shaders de conjunto fractal de Julia con Three.js, tarea N°2 curso computación en GPU CC7515, uchile.
+Visualizador shaders de conjunto fractal de Julia con Three.js, tarea N°2 curso computación en GPU CC7515, Universidad de Chile.
 
 <div align="center">
     <img src="https://github.com/ppizarror/ppizarror.github.io/blob/ac5566b1bd7e83bb2e8f9990fdab8fa2a142d96d/resources/images/julia-shaders/main.PNG?raw=true" alt="" width="60%">
@@ -28,7 +28,7 @@ El proyecto se puede ejecutar de manera online: [ppizarror.com/julia-shaders-thr
 | md5 | 2.10.0 | <a href="https://github.com/blueimp/JavaScript-MD5">github.com/blueimp/JavaScript-MD5</a> |
 | normalize | 8.0.0 | <a href="https://github.com/necolas/normalize.css">github.com/necolas/normalize.css</a> |
 | stats.js | r17 | <a href="https://github.com/mrdoob/stats.js">github.com/mrdoob/stats.js</a> |
-| three.js | r98 | <a href="https://github.com/mrdoob/three.js">github.com/mrdoob/three.js</a> |
+| three.js | r105 | <a href="https://github.com/mrdoob/three.js">github.com/mrdoob/three.js</a> |
 
 ## Referencias
 
@@ -39,4 +39,4 @@ El proyecto se puede ejecutar de manera online: [ppizarror.com/julia-shaders-thr
 
 ## Autor
 
-[Pablo Pizarro R.](http://ppizarror.com) | 2018
+[Pablo Pizarro R.](http://ppizarror.com) | 2018-2019
