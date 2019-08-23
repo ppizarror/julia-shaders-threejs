@@ -28,7 +28,7 @@ El proyecto se puede ejecutar de manera online: [ppizarror.com/julia-shaders-thr
 | md5 | 2.10.0 | <a href="https://github.com/blueimp/JavaScript-MD5">github.com/blueimp/JavaScript-MD5</a> |
 | normalize | 8.0.0 | <a href="https://github.com/necolas/normalize.css">github.com/necolas/normalize.css</a> |
 | stats.js | r17 | <a href="https://github.com/mrdoob/stats.js">github.com/mrdoob/stats.js</a> |
-| three.js | r105 | <a href="https://github.com/mrdoob/three.js">github.com/mrdoob/three.js</a> |
+| three.js | r107 | <a href="https://github.com/mrdoob/three.js">github.com/mrdoob/three.js</a> |
 
 ## Referencias
 
