@@ -21,7 +21,7 @@ $(function () {
      * Carga las configuraciones
      * ------------------------------------------------------------------------
      */
-    console.log(cfg_lang);
+    // console.log(cfg_lang);
     lang = lang_db[cfg_lang]; // Se carga el idioma
 
 
