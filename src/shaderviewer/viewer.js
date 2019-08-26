@@ -574,7 +574,6 @@ function ShaderViewer() {
          * --------------------------------------------------------------------
          * Crea la cámara
          * --------------------------------------------------------------------
-         * @private
          */
         this._three_camera = new THREE.PerspectiveCamera(
             self.objects_props.camera.angle,
@@ -585,6 +584,11 @@ function ShaderViewer() {
         this._three_camera.zoom = this.objects_props.camera.zoom;
 
         // noinspection JSUnusedGlobalSymbols
+        /**
+         * --------------------------------------------------------------------
+         * Crea la luz, se añade a la cámara
+         * --------------------------------------------------------------------
+         */
         this._cameralight = new THREE.PointLight();
         this._cameralight.color.setHex(this.objects_props.camera.light.color);
         this._cameralight.decay = this.objects_props.camera.light.decay;
