@@ -152,7 +152,7 @@ function load_shader(vertex, fragment, callback) {
         vertex: '',
     };
 
-    // noinspection JSUnresolvedFunction
+    // noinspection JSUnresolvedFunction,JSCheckFunctionSignatures
     /**
      * Se crea la consulta para el vertex shader
      */
@@ -163,13 +163,14 @@ function load_shader(vertex, fragment, callback) {
         url: vertex,
     });
 
+    // noinspection JSIgnoredPromiseFromCall
     /**
      * Respuesta correcta desde el servidor
      */
     $loadVertex.done(function (response) {
         data.vertex = response;
 
-        // noinspection JSUnresolvedFunction
+        // noinspection JSUnresolvedFunction,JSCheckFunctionSignatures
         /**
          * Se crea la consulta para el fragment shader
          */
@@ -180,6 +181,7 @@ function load_shader(vertex, fragment, callback) {
             url: fragment,
         });
 
+        // noinspection JSIgnoredPromiseFromCall
         /**
          * Respuesta correcta desde el servidor
          */
@@ -190,6 +192,7 @@ function load_shader(vertex, fragment, callback) {
             }
         });
 
+        // noinspection JSIgnoredPromiseFromCall
         /**
          * Respuesta fallida desde el servidor
          */
@@ -200,6 +203,7 @@ function load_shader(vertex, fragment, callback) {
 
     });
 
+    // noinspection JSIgnoredPromiseFromCall
     /**
      * Respuesta fallida desde el servidor
      */

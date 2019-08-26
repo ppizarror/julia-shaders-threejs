@@ -66,8 +66,6 @@ function FullPageLoadingSpinner() {
     /**
      * Muestra el spinner.
      *
-     * @function
-     * @public
      * @since 0.1.4
      */
     this.start = function () {
@@ -95,8 +93,6 @@ function FullPageLoadingSpinner() {
     /**
      * Detiene el spinner.
      *
-     * @function
-     * @public
      * @since 0.1.4
      */
     this.stop = function () {
@@ -115,11 +111,8 @@ function FullPageLoadingSpinner() {
     /**
      * Muestra una pantalla de carga.
      *
-     * @function
-     * @private
      * @param {boolean} checker - Indica el estado
      * @param {Function=} callback - Función que se llama tras la función
-     * @ignore
      */
     this._loadFullpageSpinner = function (checker, callback) {
         /* eslint callback-return:"off" */

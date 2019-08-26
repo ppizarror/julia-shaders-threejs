@@ -101,8 +101,6 @@ function AppDialog() {
     /**
      * Crea un diálogo con un texto y un botón para cerrar (confirmButton).
      *
-     * @function
-     * @public
      * @param {string} text - Contenido
      * @param {string=} title - Título del popup, opcional
      * @param {object=} options - Opciones de creación, opcional
@@ -151,8 +149,6 @@ function AppDialog() {
     /**
      * Diálogo de error.
      *
-     * @function
-     * @public
      * @param {string} title - Título del popup
      * @param {string} content - Contenido
      * @param {object=} options - Opciones de creación, opcional
@@ -164,8 +160,6 @@ function AppDialog() {
     /**
      * Diálogo de información.
      *
-     * @function
-     * @public
      * @param {string} title - Título del popup
      * @param {string} content - Contenido
      * @param {object=} options - Opciones de creación, opcional
@@ -178,8 +172,6 @@ function AppDialog() {
     /**
      * Diálogo de advertencia.
      *
-     * @function
-     * @public
      * @param {string} title - Título del popup
      * @param {string} content - Contenido
      * @param {object=} options - Opciones de creación, opcional
@@ -191,8 +183,6 @@ function AppDialog() {
     /**
      * Diálogo de éxito.
      *
-     * @function
-     * @public
      * @param {string} title - Título del popup
      * @param {string} content - Contenido
      * @param {object=} options - Opciones de creación, opcional
@@ -205,8 +195,6 @@ function AppDialog() {
     /**
      * Diálogo tipo 'otros'.
      *
-     * @function
-     * @public
      * @param {string} title - Título del popup
      * @param {string} content - Contenido
      * @param {object=} options - Opciones de creación, opcional
@@ -218,8 +206,6 @@ function AppDialog() {
     /**
      * Lanza un diálogo convencional de (E)rror, (W)arning, (S)uccess, (I)nfo, (O)ther.
      *
-     * @function
-     * @private
      * @param {string} title - Título del diálogo
      * @param {string} content - Contenido del diálogo
      * @param {string} type - Tipo de diálogo
@@ -275,8 +261,6 @@ function AppDialog() {
     /**
      * Lanza un popup de confirmación, fuerza el foco, requiere que el usuario acepte los botones.
      *
-     * @function
-     * @public
      * @param {string} title - Título del popup
      * @param {string} content - Contenido del popup
      * @param {object=} options - Opciones de creación, opcional
@@ -312,8 +296,6 @@ function AppDialog() {
      * funciones que se ejecutan al enviar el formulario (submit) o al cancelarlo (cancel).
      * El botón de submit es 'submit', el botón para cancelar es 'cancel'.
      *
-     * @function
-     * @public
      * @param {string} title - Título del formulario
      * @param {string} content - Contenido del formulario
      * @param {function} submit - Función que se ejecuta al enviar el formulario
@@ -399,6 +381,7 @@ function AppDialog() {
 
             // Si sigue siendo nulo retorna
             if (isNullUndf($cnt)) return;
+            // noinspection JSObjectNullOrUndefined,JSUnresolvedFunction
             $cnt.find('form').on('submit', function (e) {
                 e.preventDefault();
                 // noinspection JSUnresolvedVariable
@@ -417,8 +400,6 @@ function AppDialog() {
      * Crea un diálogo completo, considerando título, texto y dos botones (Aceptar,Cancelar),
      * ofrece distintos tamaños.
      *
-     * @function
-     * @private
      * @param {string} title - Título del popup
      * @param {string} content - Contenido del popup
      * @param {object} $options - Opciones de creación, obligatorio
@@ -635,8 +616,6 @@ function AppDialog() {
     /**
      * Función que evalúa el tamaño de un diálogo.
      *
-     * @function
-     * @private
      * @param {Object} $options - Opciones de creación del diálogo
      */
     this._dialogSize = function ($options) {
@@ -729,8 +708,6 @@ function AppDialog() {
     /**
      * Cierra el último diálogo.
      *
-     * @function
-     * @public
      */
     this.closeLast = function () {
         if (notNullUndf(self._last.object)) self._last.object.close();
@@ -740,8 +717,6 @@ function AppDialog() {
     /**
      * Abre el último diálogo.
      *
-     * @function
-     * @public
      */
     this.openLast = function () {
         if (notNullUndf(self._last.object)) self._last.object.open();

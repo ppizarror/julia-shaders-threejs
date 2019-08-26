@@ -53,10 +53,7 @@ function AppConsole() {
     /**
      * Aplica formato al mensaje para ser impreso en la consola.
      *
-     * @function
-     * @private
      * @param {string} msg - Mensaje
-     * @ignore
      */
     this._format = function (msg) {
         if (isNullUndf(msg)) return '';
@@ -72,10 +69,7 @@ function AppConsole() {
     /**
      * Chequea reseteo de mensajes en consola, si se excede borra consola y imprime inicio.
      *
-     * @function
-     * @private
      * @since 0.0.1
-     * @ignore
      */
     this._resetMessages = function () {
         self._consoleMessages += 1;
@@ -90,8 +84,6 @@ function AppConsole() {
     /**
      * Muestra un mensaje de información en la consola.
      *
-     * @function
-     * @public
      * @param {string} msg - Mensaje
      * @since 0.0.1
      */
@@ -107,8 +99,6 @@ function AppConsole() {
     /**
      * Escribe un objeto en la consola.
      *
-     * @function
-     * @public
      * @param {Object} obj - Objeto
      * @since 0.0.1
      */
@@ -121,8 +111,6 @@ function AppConsole() {
     /**
      * Muestra un mensaje de error en la consola.
      *
-     * @function
-     * @public
      * @param {string} msg - Mensaje
      * @param {boolean=} w - Indica si se escribe el encabezado o no
      * @since 0.0.1
@@ -145,8 +133,6 @@ function AppConsole() {
     /**
      * Escribe un contenido en la consola sin aplicar formato dentro de la línea.
      *
-     * @function
-     * @public
      * @param {object} obj - Objeto a escribir
      * @since 0.0.1
      */
@@ -158,8 +144,6 @@ function AppConsole() {
     /**
      * Escribe un error en consola.
      *
-     * @function
-     * @public
      * @param {Error} exceptionmsg - Excepción
      * @param {boolean=} w - Indica si se escribe el encabezado o no
      * @since 0.0.1
@@ -186,8 +170,6 @@ function AppConsole() {
     /**
      * Muestra un mensaje de advertencia en la consola.
      *
-     * @function
-     * @public
      * @param {string} msg - Mensaje
      * @param {boolean=} w - Indica si se escribe el encabezado o no
      * @since 0.0.1
@@ -210,8 +192,6 @@ function AppConsole() {
     /**
      * Escribe un contenido en la consola sin aplicar formato dentro de la línea.
      *
-     * @function
-     * @public
      * @param {object} obj - Objeto a escribir
      * @since 0.0.1
      */
@@ -222,10 +202,7 @@ function AppConsole() {
     /**
      * Imprime un acerca-de en consola.
      *
-     * @function
-     * @public
      * @since 0.0.1
-     * @ignore
      */
     this.aboutInfo = function () {
         console.log('{0} v{1} ({2})'.format(aboutinfo.productname, aboutinfo.v.version, aboutinfo.v.date));

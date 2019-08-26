@@ -54,7 +54,7 @@ if (Math.sign === undefined) {
  * Name en prototipe
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name
  */
-if ('name' in Function.prototype === false) {
+if (!'name' in Function.prototype) {
     /* eslint no-extend-native:"off" */
     Object.defineProperty(Function.prototype, 'name', {
         get: function () {

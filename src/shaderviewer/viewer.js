@@ -389,8 +389,6 @@ function ShaderViewer() {
     /**
      * Reajusta el canvas al cambiar el tamaño.
      *
-     * @function
-     * @protected
      * @param {boolean} type - Indica tipo de carga, si es true se añade evento, si es false se borra
      * @since 0.1.0
      */
@@ -454,8 +452,6 @@ function ShaderViewer() {
     /**
      * Inicia Three.js.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._initThree = function () {
@@ -540,7 +536,7 @@ function ShaderViewer() {
             logarithmicDepthBuffer: false,
 
             // Preferencia de WebGL, puede ser "high-performance", "low-power" ó "default"
-            powerPreference: "high-performance",
+            powerPreference: 'high-performance',
 
             // Precisión
             precision: 'highp',
@@ -600,7 +596,6 @@ function ShaderViewer() {
          * --------------------------------------------------------------------
          * Añade el render al div
          * --------------------------------------------------------------------
-         * @private
          */
         this.maindiv = $(self.id);
         this.maindiv.append(this._renderer.domElement);
@@ -664,8 +659,6 @@ function ShaderViewer() {
     /**
      * Define la posición inicial de la cámara.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._setInitialCameraPosition = function () {
@@ -701,8 +694,6 @@ function ShaderViewer() {
     /**
      * Setea el target de la cámara.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._setCameraTarget = function () {
@@ -715,8 +706,6 @@ function ShaderViewer() {
      * Verifica que el target de la cámara se encuentre entre los límites del mundo,
      * desde la versión 2.00 se verifica si colisiona en modo walkingCamera.
      *
-     * @function
-     * @private
      * @param {string} axis - Eje actualizado
      * @param {number} min - Valor mínimo de la posición
      * @param {number} max - Valor máximo de la posición
@@ -735,8 +724,6 @@ function ShaderViewer() {
     /**
      * Calcula la distancia entre dos puntos.
      *
-     * @function
-     * @private
      * @param {number} a - Número
      * @param {number} b - Número
      * @returns {number}
@@ -750,8 +737,6 @@ function ShaderViewer() {
      * Verifica que el target de la cámara se encuentre entre los límites del mundo,
      * desde la versión 2.00 se verifica si colisiona en modo walkingCamera.
      *
-     * @function
-     * @private
      * @param {string} axis - Eje actualizado
      * @param {number} min - Valor mínimo de la posición
      * @param {number} max - Valor máximo de la posición
@@ -770,8 +755,6 @@ function ShaderViewer() {
     /**
      * Chequea que el target de la cámara no colisione.
      *
-     * @function
-     * @private
      * @param {string} axis - Eje a comprobar
      * @param {number} val - valor A sumar
      * @returns {boolean} - Indica si no se colisiona (true) o no (false)
@@ -790,8 +773,6 @@ function ShaderViewer() {
     /**
      * Incrementa el target de la cámara en un valor.
      *
-     * @function
-     * @private
      * @param {string} dir - Dirección
      * @param {number} val - Incremento de la dirección
      * @param {boolean=} flipSignPos - Cambia el sentido del incremento según la posición de la cámara
@@ -846,8 +827,6 @@ function ShaderViewer() {
     /**
      * Renderiza el contenido de Three.js.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._render = function () {
@@ -877,8 +856,6 @@ function ShaderViewer() {
     /**
      * Actualiza controles y renderiza.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._animateFrame = function () {
@@ -898,8 +875,6 @@ function ShaderViewer() {
     /**
      * Thread de animación, dibuja mediante {@link requestAnimationFrame}.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._animationThread = function () {
@@ -911,8 +886,6 @@ function ShaderViewer() {
     /**
      * Inicia el thread de actualizaciones.
      *
-     * @function
-     * @protected
      * @since 0.1.0
      */
     this.initAnimate = function () {
@@ -923,8 +896,6 @@ function ShaderViewer() {
     /**
      * Añade objetos a la escena.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._initWorldObjects = function () {
@@ -949,8 +920,6 @@ function ShaderViewer() {
     /**
      * Guarda algunas variables iniciales antes de renderizar, utiliza valores desde initObjectModel.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._saveInitialStatus = function () {
@@ -962,8 +931,6 @@ function ShaderViewer() {
     /**
      * Mueve la cámara en dirección paralela al rayo entre la posición de la cámara y el target.
      *
-     * @function
-     * @private
      * @param {number} direction - Dirección de avance (1, -1)
      * @since 0.1.0
      */
@@ -993,8 +960,6 @@ function ShaderViewer() {
     /**
      * Mueve la cámara en dirección ortogonal al rayo entre la posición de la cámara y el target.
      *
-     * @function
-     * @private
      * @param {number} direction - Dirección de avance (1, -1)
      * @since 0.1.0
      */
@@ -1025,8 +990,6 @@ function ShaderViewer() {
     /**
      * Mueve la cámara de manera vertical en el eje +-Z.
      *
-     * @function
-     * @private
      * @param {number} direction - Dirección de avance
      * @since 0.1.0
      */
@@ -1042,8 +1005,6 @@ function ShaderViewer() {
     /**
      * Rota el objetivo de la cámara en torno a la posición de la cámara.
      *
-     * @function
-     * @private
      * @param {number} direction - Dirección de avance
      * @since 0.1.0
      */
@@ -1088,8 +1049,6 @@ function ShaderViewer() {
     /**
      * Mueve la cámara al frente.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._moveForward = function () {
@@ -1099,8 +1058,6 @@ function ShaderViewer() {
     /**
      * Mueve la cámara hacia atrás.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._moveBackward = function () {
@@ -1110,8 +1067,6 @@ function ShaderViewer() {
     /**
      * Mueve la cámara a la izquierda.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._moveLeft = function () {
@@ -1121,8 +1076,6 @@ function ShaderViewer() {
     /**
      * Mueve la cámara a la derecha.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._moveRight = function () {
@@ -1132,8 +1085,6 @@ function ShaderViewer() {
     /**
      * Mueve la cámara en la coordenada +Z.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._moveUp = function () {
@@ -1143,8 +1094,7 @@ function ShaderViewer() {
     /**
      * Mueve la cámara en la coordenada -Z.
      *
-     * @function
-     * @private
+     * @since 0.1.0
      */
     this._moveDown = function () {
         this._moveVertical(-1);
@@ -1153,8 +1103,6 @@ function ShaderViewer() {
     /**
      * Rota la cámara hacia la izquierda.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._rotateLeft = function () {
@@ -1164,8 +1112,6 @@ function ShaderViewer() {
     /**
      * Rota la cámara hacia la derecha.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._rotateRight = function () {
@@ -1175,8 +1121,6 @@ function ShaderViewer() {
     /**
      * Forza el foco en la aplicación.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this.focus = function () {
@@ -1187,7 +1131,6 @@ function ShaderViewer() {
     /**
      * Guarda la referencia al menú.
      *
-     * @function
      * @param {JQuery<HTMLElement>} menu - Menú de la aplicación
      */
     this.setMenuPanel = function (menu) {
@@ -1197,8 +1140,6 @@ function ShaderViewer() {
     /**
      * Inicia los eventos, se puede reemplazar por otra función.
      *
-     * @function
-     * @protected
      * @since 0.1.0
      */
     this._initEvents = function () {
@@ -1356,8 +1297,6 @@ function ShaderViewer() {
     /**
      * Detiene el thread de actualización.
      *
-     * @function
-     * @protected
      * @since 0.1.0
      */
     this.stopAnimate = function () {
@@ -1368,8 +1307,6 @@ function ShaderViewer() {
     /**
      * Resetea la cámara.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._resetCamera = function () {
@@ -1380,8 +1317,6 @@ function ShaderViewer() {
     /**
      * Activa/Desactiva un helper.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._toggleHelper = function () {
@@ -1394,8 +1329,6 @@ function ShaderViewer() {
     /**
      * Oculta/Muestra los ejes.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._toggleAxis = function () {
@@ -1407,8 +1340,6 @@ function ShaderViewer() {
     /**
      * Oculta/Muestra la grilla.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._toggleGrid = function () {
@@ -1420,8 +1351,6 @@ function ShaderViewer() {
     /**
      * Oculta/Muestra los límites del mundo.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._toggleWorldLimits = function () {
@@ -1433,8 +1362,6 @@ function ShaderViewer() {
     /**
      * Oculta/Muestra el objetivo de la cámara.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._toggleCameraTarget = function () {
@@ -1446,8 +1373,6 @@ function ShaderViewer() {
     /**
      * Oculta/Muestra los planos.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._togglePlanes = function () {
@@ -1458,8 +1383,6 @@ function ShaderViewer() {
     /**
      * Oculta/Muestra la GUI.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._toggleGUI = function () {
@@ -1474,8 +1397,6 @@ function ShaderViewer() {
     /**
      * Construye una interfaz gráfica para el render.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._buildGUI = function () {
@@ -1569,8 +1490,6 @@ function ShaderViewer() {
     /**
      * Destruye la GUI.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._destroyGUI = function () {
@@ -1585,8 +1504,6 @@ function ShaderViewer() {
     /**
      * Añade visualizador de FPS.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._toggleFPSMeter = function () {
@@ -1622,8 +1539,6 @@ function ShaderViewer() {
     /**
      * Dibuja los helpers de Three.js según configuración.
      *
-     * @function
-     * @private
      * @since 0.1.0
      */
     this._drawHelpers = function () {
@@ -1877,8 +1792,6 @@ function ShaderViewer() {
     /**
      * Añade un mesh a la escena.
      *
-     * @function
-     * @private
      * @param {Object3D} mesh - Mesh
      * @param {string} name - Nombre del objeto
      * @param {boolean=} collaidable - Indica si el objeto es colisionable o no
@@ -1906,8 +1819,6 @@ function ShaderViewer() {
     /**
      * Añade un mesh a la lista de objetos colisionables.
      *
-     * @function
-     * @private
      * @param {object} mesh - Mesh con características colisionables
      * @since 0.1.0
      */
@@ -1918,8 +1829,6 @@ function ShaderViewer() {
     /**
      * Inserta un punto en (x,y,z).
      *
-     * @function
-     * @private
      * @param {number} x - Coordenada en x
      * @param {number} y - Coordenada en y
      * @param {number} z - Coordenada en z
@@ -1940,8 +1849,6 @@ function ShaderViewer() {
     /**
      * Inicia el visualizador.
      *
-     * @function
-     * @public
      * @param {string} parentElement - Contenedor del visualizador
      * @since 0.1.3
      */
@@ -1957,8 +1864,6 @@ function ShaderViewer() {
     /**
      * Ejecuta el shader seleccionado desde el menú.
      *
-     * @function
-     * @public
      * @since 0.1.6
      */
     this.loadSelectedShader = function () {
@@ -1994,8 +1899,7 @@ function ShaderViewer() {
 
     /**
      * Función que recibe los datos cargados de los shaders y ejecuta la función.
-     * @function
-     * @private
+     *
      * @param {object} data - Datos descargados desde ajax
      * @since 0.2.1
      */
@@ -2022,8 +1926,6 @@ function ShaderViewer() {
     /**
      * Define el selector del shader.
      *
-     * @function
-     * @public
      * @param {JQuery<HTMLElement>, HTMLElement} selector - Selector del shader
      * @since 0.1.6
      */
@@ -2034,8 +1936,6 @@ function ShaderViewer() {
     /**
      * Inicia el objeto de dibujo del shader.
      *
-     * @function
-     * @private
      * @since 0.1.6
      */
     this._initShaderObject = function () {
@@ -2208,8 +2108,6 @@ function ShaderViewer() {
     /**
      * Define los bordes del shader y ejecuta un nuevo cuadro.
      *
-     * @function
-     * @private
      * @param {number} z_i - Valor medio de Zi
      * @param {number} z_r - Valor medio de zr
      * @param {number} range - Rango del gráfico
@@ -2266,9 +2164,7 @@ function ShaderViewer() {
     /**
      * Dibuja la región del zoom.
      *
-     * @function
      * @param {object} e - Evento
-     * @private
      * @since 0.2.1
      */
     this._drawZoomRegion = function (e) {
@@ -2358,8 +2254,6 @@ function ShaderViewer() {
     /**
      * Oculta el plano de zoom
      *
-     * @function
-     * @private
      * @since 0.4.1
      */
     this._hideZoomPlane = function () {
@@ -2375,8 +2269,6 @@ function ShaderViewer() {
     /**
      * Muestra el plano de zoom
      *
-     * @function
-     * @private
      * @since 0.4.1
      */
     this._showZoomPlane = function () {
@@ -2391,10 +2283,8 @@ function ShaderViewer() {
     /**
      * Ajusta el recuadro de zoom.
      *
-     * @function
      * @param {number} zr - Coordenada real
      * @param {number} zi - Coordenada imaginaria
-     * @private
      * @since 0.2.1
      */
     this._updateBoundZoom = function (zr, zi) {
@@ -2432,8 +2322,6 @@ function ShaderViewer() {
     /**
      * Hace un zoom (+), ajusta el recuadro y redibuja.
      *
-     * @function
-     * @private
      * @since 0.2.2
      */
     this._zoomIn = function () {
@@ -2464,8 +2352,6 @@ function ShaderViewer() {
     /**
      * Hace un zoom (-), ajusta el recuadro y redibuja.
      *
-     * @function
-     * @private
      * @since 0.2.2
      */
     this._zoomOut = function () {
@@ -2502,8 +2388,6 @@ function ShaderViewer() {
     /**
      * Escribe los datos del plano complejo en el menú.
      *
-     * @function
-     * @private
      * @since 0.2.2
      */
     this._printCoords = function () {
@@ -2530,7 +2414,6 @@ function ShaderViewer() {
     /**
      * Define la ventana de información del shader en el plano complejo.
      *
-     * @function
      * @param {JQuery<HTMLElement> | HTMLElement} window - Ventana de información
      * @since 0.2.2
      */
@@ -2568,7 +2451,6 @@ function ShaderViewer() {
     /**
      * Actualiza un color.
      *
-     * @function
      * @param {string} color - Nombre del color
      * @param {number} value - Valor del color
      * @since 0.2.5
@@ -2582,7 +2464,6 @@ function ShaderViewer() {
     /**
      * Retorna el color inicial del shader.
      *
-     * @function
      * @param {string} color - Nombre del color
      * @returns {number}
      * @since 0.2.5
@@ -2594,7 +2475,6 @@ function ShaderViewer() {
     /**
      * Modifica el número de iteraciones del shader.
      *
-     * @function
      * @param {number} value - Número
      */
     this.updateItersNumber = function (value) {
@@ -2609,7 +2489,6 @@ function ShaderViewer() {
     /**
      * Retorna el valor del número de iteraciones.
      *
-     * @function
      * @returns {number}
      */
     this.getMaxIterations = function () {
@@ -2619,7 +2498,6 @@ function ShaderViewer() {
     /**
      * Retorna la constante compleja de julia
      *
-     * @function
      * @return {number[]}
      */
     this.getJuliaConstant = function () {
@@ -2629,7 +2507,6 @@ function ShaderViewer() {
     /**
      * Define el valor de la constante de julia.
      *
-     * @function
      * @param {string} m - Indica si es real o imaginario
      * @param {number} val - Valor
      */
@@ -2662,7 +2539,6 @@ function ShaderViewer() {
     /**
      * Define los input de los valores de julia.
      *
-     * @function
      * @param {JQuery<HTMLElement>} re - Input real
      * @param {JQuery<HTMLElement>} im - Input real
      * @since 0.3.0

@@ -74,7 +74,9 @@ function stopWheelEvent(e) {
     /**
      * IE7, IE8, Chrome, Safari
      */
-    if (!e) e = window.event;
+    if (!e) { // noinspection JSDeprecatedSymbols
+        e = window.event;
+    }
 
     /**
      * Chrome, Safari, Firefox

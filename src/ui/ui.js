@@ -41,7 +41,7 @@ function BuildUI() {
     /**
      * Inicia el visualizador, toma por parámetro el nombre de los paneles izquierdo
      * (menú) y derecho (canvas).
-     * @function
+     *
      * @param {string} leftPanel - ID del panel izquierdo
      * @param {string} rightPanel - ID del panel derecho
      * @since 0.1.0
@@ -72,9 +72,8 @@ function BuildUI() {
     };
 
     /**
-     * Dibuja el menú (panel izquierdo)
-     * @function
-     * @private
+     * Dibuja el menú (panel izquierdo).
+     *
      * @since 0.1.0
      */
     this._drawMenu = function () {
@@ -236,9 +235,8 @@ function BuildUI() {
     };
 
     /**
-     * Crea un input en el menú lateral
-     * @function
-     * @private
+     * Crea un input en el menú lateral.
+     *
      * @since 0.1.6
      */
     this._drawMenuInput = function () {
@@ -252,9 +250,9 @@ function BuildUI() {
     };
 
     /**
-     * Dibuja el canvas e inicia el viewer
+     * Dibuja el canvas e inicia el viewer.
+     *
      * @param {string} container - Contenedor del visualizador
-     * @private
      * @since 0.1.0
      */
     this._drawCanvas = function (container) {
