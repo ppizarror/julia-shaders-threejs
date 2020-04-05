@@ -10,7 +10,7 @@
  * Añade información de autor
  */
 aboutinfo.author = {
-    "email": "pablo.pizarro@ing.uchile.cl",
+    "email": "pablo@ppizarror.com",
     "github": "https://github.com/ppizarror",
     "name": "Pablo Pizarro R.",
     "tag": "@ppizarror",
