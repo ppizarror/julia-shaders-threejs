@@ -39,4 +39,4 @@ El proyecto se puede ejecutar de manera online: [https://github.ppizarror.com/ju
 
 ## Autor
 
-[Pablo Pizarro R.](https://ppizarror.com) | 2018-2019
+[Pablo Pizarro R.](https://ppizarror.com) | 2018 - 2019
