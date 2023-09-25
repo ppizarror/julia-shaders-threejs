@@ -45,10 +45,8 @@ function AppConsole() {
     /**
      * Puntero a objeto
      * @type {AppConsole}
-     * @private
-     * @ignore
      */
-    let self = this;
+    const self = this;
 
     /**
      * Aplica formato al mensaje para ser impreso en la consola.

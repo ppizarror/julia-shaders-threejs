@@ -41,8 +41,6 @@ cmake-build-debug/
 entregas/*
 *.pdf
 
-# Archivos CLion
+# IDE
 .idea/
-
-# VScode
-.vs/
+.vscode/

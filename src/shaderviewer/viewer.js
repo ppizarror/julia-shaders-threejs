@@ -40,7 +40,7 @@ function ShaderViewer() {
      * Puntero al objeto
      * @type {ShaderViewer}
      */
-    let self = this;
+    const self = this;
 
     /**
      * Selector del shader

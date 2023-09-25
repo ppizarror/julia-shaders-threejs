@@ -36,7 +36,7 @@ function BuildUI() {
      * @type {BuildUI}
      * @since 0.1.0
      */
-    let self = this;
+    const self = this;
 
     /**
      * Inicia el visualizador, toma por parámetro el nombre de los paneles izquierdo

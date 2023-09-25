@@ -93,10 +93,8 @@ function AppDialog() {
     /**
      * Puntero al objeto
      * @type {AppDialog}
-     * @private
-     * @ignore
      */
-    let self = this;
+    const self = this;
 
     /**
      * Crea un diálogo con un texto y un botón para cerrar (confirmButton).

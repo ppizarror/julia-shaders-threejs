@@ -58,10 +58,8 @@ function FullPageLoadingSpinner() {
     /**
      * Puntero al objeto
      * @type {FullPageLoadingSpinner}
-     * @private
-     * @ignore
      */
-    let self = this;
+    const self = this;
 
     /**
      * Muestra el spinner.
