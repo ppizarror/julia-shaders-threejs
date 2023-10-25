@@ -9,7 +9,7 @@
 
 lang_db.en = {
     "about_title": "About",
-    "about_title_content": "Homework 2, CC-7515 GPU Computing, University of Chile. Shader visualization engine for Julia sets.<br><br>Author: <a href='{3}'>{2}</a><br><br>Version {0} ({1})<br><i class='fab fa-github'></i> <a href='https://github.com/ppizarror/julia-shaders-threejs'>See at Github</a>",
+    "about_title_content": "Homework 2, CC-7515 GPU Computing, Universidad de Chile. Shader visualization engine for Julia sets.<br><br>Author: <a href='{3}'>{2}</a><br><br>Version {0} ({1})<br><i class='fab fa-github'></i> <a href='https://github.com/ppizarror/julia-shaders-threejs'>See at Github</a>",
     "answer_cancel": "Cancel",
     "answer_establish": "Stablish",
     "answer_no": "No",
